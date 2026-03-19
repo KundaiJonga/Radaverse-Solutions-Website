@@ -1,6 +1,5 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import Image from "next/image"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
@@ -126,15 +125,13 @@ export default function OceanKartPage() {
               </div>
 
               <div className="relative">
-                <div className="aspect-square rounded-3xl bg-gradient-to-br from-primary/30 via-primary/20 to-primary/5 border border-border flex items-center justify-center p-8">
-                  <div className="relative w-full h-full max-w-xs max-h-xs">
-                    <Image
-                      src="/images/oceankart-logo.jpeg"
-                      alt="OceanKart Logo - Delivering Waves of Trust and Reliability"
-                      fill
-                      className="object-contain"
-                      priority
-                    />
+                <div className="aspect-square rounded-3xl bg-gradient-to-br from-primary/30 via-primary/20 to-primary/5 border border-border flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="h-24 w-24 mx-auto rounded-full bg-primary/20 flex items-center justify-center mb-6">
+                      <Droplets className="h-12 w-12 text-primary" />
+                    </div>
+                    <div className="text-3xl font-bold text-foreground">OceanKart</div>
+                    <div className="text-muted-foreground mt-2">Water Delivery Made Easy</div>
                   </div>
                 </div>
               </div>
