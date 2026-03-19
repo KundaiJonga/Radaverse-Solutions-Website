@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Droplets, MapPin, CreditCard, Star, ArrowRight, CheckCircle2 } from "lucide-react"
 
@@ -118,8 +119,13 @@ export function ProductSection() {
               </ul>
             </div>
             <div className="flex flex-col items-center justify-center text-center">
-              <div className="h-32 w-32 rounded-full bg-primary/20 flex items-center justify-center mb-6">
-                <Droplets className="h-16 w-16 text-primary" />
+              <div className="relative h-40 w-40 mb-6">
+                <Image
+                  src="/images/oceankart-logo.jpeg"
+                  alt="OceanKart Logo - Delivering Waves of Trust and Reliability"
+                  fill
+                  className="object-contain"
+                />
               </div>
               <h4 className="text-xl font-semibold text-foreground">Ready to Get Started?</h4>
               <p className="mt-2 text-sm text-muted-foreground">Download OceanKart today</p>
