@@ -12,6 +12,7 @@ const footerNavigation = {
   legal: [
     { name: "Terms & Conditions", href: "/terms" },
     { name: "Privacy Policy", href: "/privacy" },
+    { name: "Account Deletion", href: "/oceankart/deletion" },
   ],
 }
 

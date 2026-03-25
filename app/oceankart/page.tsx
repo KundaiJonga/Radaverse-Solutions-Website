@@ -295,11 +295,21 @@ export default function OceanKartPage() {
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
+              <Button variant="ghost" size="lg" asChild className="w-full sm:w-auto">
+                <Link href="/oceankart/deletion">
+                  Account Deletion Policy
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
             </div>
             <p className="mt-8 text-sm text-muted-foreground">
               By using OceanKart, you agree to our{" "}
               <Link href="/terms" className="text-primary hover:underline">
                 Terms & Conditions
+              </Link>
+              {" "} and our{" "}
+              <Link href="/oceankart/deletion" className="text-primary hover:underline">
+                Account Deletion Policy
               </Link>
             </p>
           </div>
