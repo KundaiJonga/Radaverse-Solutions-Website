@@ -185,7 +185,7 @@ export default function DeletionPage() {
 
           {/* Last updated */}
           <div className="mt-12 text-center text-sm text-muted-foreground">
-            <p>Last updated: March 2026.</p>
+            <p>Last updated: March 2026</p>
           </div>
         </div>
       </main>
