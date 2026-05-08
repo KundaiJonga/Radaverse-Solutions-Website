@@ -1,18 +1,20 @@
-import type { Metadata } from "next"
-import Link from "next/link"
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
-import { Button } from "@/components/ui/button"
-import { ArrowLeft, Mail, Trash2 } from "lucide-react"
+import type { Metadata } from "next";
+import Link from "next/link";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+import { Button } from "@/components/ui/button";
+import { ArrowLeft, Mail, Trash2 } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Account Deletion Policy | OceanKart - Radaverse Solutions",
-  description: "Learn how to delete your OceanKart account and what data will be removed. Account deletion request process and timeframe.",
+  description:
+    "Learn how to delete your OceanKart account and what data will be removed. Account deletion request process and timeframe.",
   openGraph: {
     title: "Account Deletion Policy | OceanKart",
-    description: "Account Deletion Policy for OceanKart water delivery platform.",
+    description:
+      "Account Deletion Policy for OceanKart water delivery platform.",
   },
-}
+};
 
 const sections = [
   {
@@ -76,7 +78,7 @@ const sections = [
       "We typically respond to deletion requests within 1-2 business days",
     ],
   },
-]
+];
 
 export default function DeletionPage() {
   return (
@@ -98,23 +100,29 @@ export default function DeletionPage() {
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-destructive/10">
                 <Trash2 className="h-6 w-6 text-destructive" />
               </div>
-              <h1 className="text-4xl font-bold text-foreground">Account Deletion Policy</h1>
+              <h1 className="text-4xl font-bold text-foreground">
+                Account Deletion Policy
+              </h1>
             </div>
             <p className="text-lg text-muted-foreground">
-              Learn how to delete your OceanKart account and understand what happens to your data.
+              Learn how to delete your OceanKart account and understand what
+              happens to your data.
             </p>
           </div>
 
           {/* App info box */}
           <div className="mb-12 rounded-lg bg-muted p-6">
-            <h2 className="mb-4 text-xl font-semibold text-foreground">App Information</h2>
+            <h2 className="mb-4 text-xl font-semibold text-foreground">
+              App Information
+            </h2>
             <div className="space-y-2 text-muted-foreground">
               <p>
-                <span className="font-medium text-foreground">App Name:</span> OceanKart
+                <span className="font-medium text-foreground">App Name:</span>{" "}
+                OceanKart
               </p>
               <p>
-                <span className="font-medium text-foreground">Developer:</span> Radaverse Solutions
-                Private Limited
+                <span className="font-medium text-foreground">Developer:</span>{" "}
+                Radaverse Solutions Private Limited
               </p>
             </div>
           </div>
@@ -122,13 +130,23 @@ export default function DeletionPage() {
           {/* Sections */}
           <div className="space-y-12">
             {sections.map((section, index) => (
-              <section key={index} className="border-b border-border pb-8 last:border-b-0">
-                <h2 className="mb-4 text-2xl font-semibold text-foreground">{section.title}</h2>
-                <p className="mb-4 text-muted-foreground leading-relaxed">{section.content}</p>
+              <section
+                key={index}
+                className="border-b border-border pb-8 last:border-b-0"
+              >
+                <h2 className="mb-4 text-2xl font-semibold text-foreground">
+                  {section.title}
+                </h2>
+                <p className="mb-4 text-muted-foreground leading-relaxed">
+                  {section.content}
+                </p>
                 {section.list && (
                   <ul className="space-y-3 ml-6">
                     {section.list.map((item, itemIndex) => (
-                      <li key={itemIndex} className="flex gap-3 text-muted-foreground">
+                      <li
+                        key={itemIndex}
+                        className="flex gap-3 text-muted-foreground"
+                      >
                         <span className="text-primary font-bold">•</span>
                         <span>{item}</span>
                       </li>
@@ -146,7 +164,8 @@ export default function DeletionPage() {
               Need Help?
             </h2>
             <p className="mb-4 text-muted-foreground">
-              If you have any questions about our Account Deletion Policy or need assistance:
+              If you have any questions about our Account Deletion Policy or
+              need assistance:
             </p>
             <div className="space-y-2">
               <p className="text-muted-foreground">
@@ -166,11 +185,11 @@ export default function DeletionPage() {
 
           {/* Last updated */}
           <div className="mt-12 text-center text-sm text-muted-foreground">
-            <p>Last updated: March 2026</p>
+            <p>Last updated: March 2026.</p>
           </div>
         </div>
       </main>
       <Footer />
     </div>
-  )
+  );
 }
