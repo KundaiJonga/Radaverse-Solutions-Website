@@ -3,7 +3,8 @@ import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
-import { 
+import { AppDownload } from "@/components/oceankart/app-download"
+import {
   Droplets, 
   MapPin, 
   CreditCard, 
@@ -114,13 +115,18 @@ export default function OceanKartPage() {
                   Create orders, receive competitive bids, and track deliveries in real-time.
                 </p>
                 <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                  <Button size="lg" className="w-full sm:w-auto">
-                    <Smartphone className="mr-2 h-5 w-5" />
-                    Download App
+                  <Button size="lg" asChild className="w-full sm:w-auto">
+                    <a href="#download">
+                      <Smartphone className="mr-2 h-5 w-5" />
+                      Download App
+                    </a>
                   </Button>
                   <Button variant="outline" size="lg" asChild className="w-full sm:w-auto">
                     <Link href="/terms">View Terms</Link>
                   </Button>
+                </div>
+                <div className="mt-10">
+                  <AppDownload variant="hero" />
                 </div>
               </div>
 
@@ -275,20 +281,19 @@ export default function OceanKartPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-24 bg-primary/5">
+        <section id="download" className="scroll-mt-20 py-24 bg-primary/5">
           <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance">
               Ready to Get Started?
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground max-w-2xl mx-auto">
-              Join OceanKart today and experience the future of water delivery. 
+              Join OceanKart today and experience the future of water delivery.
               Available for both clients and suppliers.
             </p>
+            <div className="mt-10">
+              <AppDownload variant="cta" />
+            </div>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Button size="lg" className="w-full sm:w-auto">
-                <Smartphone className="mr-2 h-5 w-5" />
-                Download for Android
-              </Button>
               <Button variant="outline" size="lg" asChild className="w-full sm:w-auto">
                 <Link href="/#contact">
                   Contact Us
