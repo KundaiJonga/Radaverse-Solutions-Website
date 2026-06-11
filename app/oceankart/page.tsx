@@ -147,17 +147,17 @@ export default function OceanKartPage() {
                 </div>
               </div>
 
-              <div className="relative w-full max-w-md mx-auto lg:max-w-none lg:mx-0">
-                <div className="aspect-square rounded-3xl bg-gradient-to-br from-primary/30 via-primary/20 to-primary/5 border border-border flex items-center justify-center p-4 sm:p-6">
-                  <div className="text-center w-full">
+              <div className="relative flex items-center justify-center">
+                <div className="aspect-square rounded-3xl bg-gradient-to-br from-primary/30 via-primary/20 to-primary/5 border border-border flex items-center justify-center p-4 sm:p-6 w-full max-w-xs sm:max-w-sm lg:max-w-md">
+                  <div className="text-center flex items-center justify-center">
                     <Image
                       src="/OceanKart LOGO.jpeg"
                       alt="OceanKart Logo"
-                      width={240}
-                      height={240}
+                      width={300}
+                      height={300}
                       priority
-                      sizes="(max-width: 640px) 160px, (max-width: 1024px) 220px, 340px"
-                      className="mb-6 rounded-3xl w-full h-auto max-w-xs sm:max-w-sm lg:max-w-md"
+                      sizes="(max-width: 640px) 160px, (max-width: 1024px) 220px, 300px"
+                      className="rounded-3xl w-auto h-auto"
                     />
                   </div>
                 </div>
